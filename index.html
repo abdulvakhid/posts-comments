@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body >
+
+    <div class="container">
+        <div class="row">
+            <ul class="col-4 users list-unstyled">
+                <div class="content mx-auto ">
+
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                
+                </div>
+            </ul>
+            <ul class="col-4 posts list-unstyled"> 
+                <div class="load-wrapper">
+                    <div class="load-circle">
+                      L
+                    </div>
+                    <div class="load-circle">
+                      O
+                    </div>
+                    <div class="load-circle">
+                      A
+                    </div>
+                    <div class="load-circle">
+                      D
+                    </div>
+                    <div class="load-circle">
+                      I
+                    </div>
+                    <div class="load-circle">
+                      N
+                    </div>
+                    <div class="load-circle">
+                      G
+                    </div>
+                  </div>
+            </ul>
+            <ul class="col-4 comments list-unstyled">
+                <div class="load-wrapper">
+                    <div class="load-circle">
+                      L
+                    </div>
+                    <div class="load-circle">
+                      O
+                    </div>
+                    <div class="load-circle">
+                      A
+                    </div>
+                    <div class="load-circle">
+                      D
+                    </div>
+                    <div class="load-circle">
+                      I
+                    </div>
+                    <div class="load-circle">
+                      N
+                    </div>
+                    <div class="load-circle">
+                      G
+                    </div>
+                  </div>
+            </ul>
+        </div>
+    </div>
+
+    <template class="template">
+        <li class="item p-3 bg-success mb-3 text-white rounded-4">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="username badge bg-warning mb-1">username</span>
+                    <p class="fullname mb-1">Full name</p>
+                </div>
+                <div>
+                    <span class="userid badge fs-4 bg-info">id</span>
+                </div>
+            </div>
+            <a class="text-white text-decoration-none location" href="" target="blank">
+                <address>
+                    <span class="street">street</span> <span class="home-nuber">home number</span>
+                    <span class="city">city</span> <span class="postal">zip</span>
+                </address>
+            </a>
+
+            <p>
+                <span class="company-name d-block">name</span>
+                <span class="company-catch d-block">Catch</span>
+                <span class="company-bs d-block">bs</span>
+            </p>
+
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <a class="phone d-block text-decoration-none text-white" href="tel:+">tel</a>
+                </div>
+                <div class="col-6">
+                    <a class="site d-block text-decoration-none text-white" href="" target="blank"> site</a>
+                    <a class="email d-block text-decoration-none text-white" href="mailto:" target="blank"> site</a>
+                </div>
+            </div>
+
+            <button class="ms-auto me-3 d-block mt-2 btn btn-light posts">posts</button>
+        </li>
+    </template>
+
+
+    <template class="post-template">
+        <li class="post-item p-4 bg-success mb-4 text-white rounded-4">
+         <div class="row">
+            <p class="post-name text-center fs-3 col-9">name</p>
+            <p class="text-end col-3"><span class="post-id badge bg-secondary p-3 fs-3 ">id</span></p>
+         </div>
+            <p class="post-body text-center">text</p>
+            <button class="btn btn-primary commentsbtn d-block mx-auto" >Comments</button>
+        </li>
+    </template>
+
+    <template class="comment-template">
+        <li class="comments-item p-4 bg-success mb-4 text-white rounded-4">
+            <p class="comments-name text-center fs-3">name</p>
+            <div class=" d-flex justify-content-around align-items-center mb-3">
+                <span class="comments-email">email</span>
+                <span class="comments-id badge bg-danger fs-3">id</span>
+            </div>
+            <p class="comments-body text-center">text</p>
+        </li>
+    </template>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -104,6 +104,8 @@ async function showComments(num) {
             
             clonedCommentTemplate.querySelector(".comments-name").textContent = item.title;
             clonedCommentTemplate.querySelector(".comments-email").textContent = item.email;
+            clonedCommentTemplate.querySelector(".comments-email").href = `mailto:${item.email}`;
+
             clonedCommentTemplate.querySelector(".comments-id").textContent = item.id;
             clonedCommentTemplate.querySelector(".comments-body").textContent = item.body;
             
